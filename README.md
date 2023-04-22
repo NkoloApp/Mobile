@@ -1,2 +1,2 @@
-# Banq
+# Nkolo
 E-wallet for Cameroon. 
