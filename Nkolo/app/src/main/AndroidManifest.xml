@@ -15,7 +15,7 @@
         <activity
             android:name=".home.HomeActivity"
             android:exported="false"
-            android:label="@string/title_activity_home"
+            android:label="@string/app_name"
             android:theme="@style/Theme.Nkolo"/>
         <activity
             android:name=".SplashActivity"
@@ -28,6 +28,7 @@
             </intent-filter>
         </activity>
         <activity
+            android:label="@string/app_name"
             android:name=".credentials.Checkin"
             android:theme="@style/Theme.Nkolo" />
     </application>
