@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="11px" height="11px" viewBox="0 0 11 11" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="vuesaxbrokentick-circle" fill-opacity="1">
+    <path d="M477 -970L477 -970L477 -959L466 -959L466 -970L477 -970Z" id="vuesaxbrokentick-circle" fill="none" stroke="none" />
+    <g id="vuesaxbrokentick-circle">
+      <g id="tick-circle">
+        <path d="M1.83333 2.75C1.26042 3.51542 0.916667 4.46875 0.916667 5.5C0.916667 8.03 2.97 10.0833 5.5 10.0833C8.03 10.0833 10.0833 8.03 10.0833 5.5C10.0833 2.97 8.03 0.916667 5.5 0.916667C4.84458 0.916667 4.21667 1.05417 3.65292 1.30625" id="Vector" fill="none" stroke="#128C7E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M6.875 4.7575L7.38833 4.23958" id="Vector" fill="none" fill-rule="evenodd" stroke="#128C7E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M3.61206 5.5L4.86789 6.76042L6.03664 5.59625" id="Vector" fill="none" stroke="#128C7E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M11 0L11 11L0 11L0 0L11 0Z" id="Vector" fill="none" fill-rule="evenodd" stroke="none" />
+      </g>
+    </g>
+  </g>
+</svg>

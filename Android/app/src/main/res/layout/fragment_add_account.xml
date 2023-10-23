@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.home.ui.AddAccountFragment"
+    android:paddingStart="@dimen/_36dp"
+    android:background="@color/white"
+    android:paddingTop="@dimen/_36dp">
+
+    <androidx.appcompat.widget.AppCompatCheckedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Accout"
+        style="@style/h3"
+        android:layout_marginBottom="@dimen/_36dp"
+        />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/fab_margin"
+        android:paddingBottom="@dimen/fab_margin"
+        android:background="@drawable/underline"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/momo"
+            />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/_8dp">
+
+            <androidx.appcompat.widget.AppCompatCheckedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MOMO by MTN"
+                style="@style/p2"
+                android:textColor="@color/black"
+                />
+
+            <androidx.appcompat.widget.AppCompatCheckedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="unverified"
+                style="@style/p3"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/fab_margin"
+        android:paddingBottom="@dimen/fab_margin"
+        android:background="@drawable/underline"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/om"
+            />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/_8dp">
+
+            <androidx.appcompat.widget.AppCompatCheckedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Orange Money"
+                style="@style/p2"
+                android:textColor="@color/black"
+                />
+
+            <androidx.appcompat.widget.AppCompatCheckedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="unverified"
+                style="@style/p3"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/fab_margin"
+        android:paddingBottom="@dimen/fab_margin"
+        android:background="@drawable/underline"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/diool"
+            />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/_8dp">
+
+            <androidx.appcompat.widget.AppCompatCheckedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Diool"
+                style="@style/p2"
+                android:textColor="@color/black"
+                />
+
+            <androidx.appcompat.widget.AppCompatCheckedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="unverified"
+                style="@style/p3"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/fab_margin"
+        android:paddingBottom="@dimen/fab_margin"
+        android:background="@drawable/underline"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/luna_add"
+            />
+
+        <androidx.appcompat.widget.AppCompatCheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add account"
+            style="@style/h3"
+            android:textColor="@color/black"
+            />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/luna_acc_close"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_36dp"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

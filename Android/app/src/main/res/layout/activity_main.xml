@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.splash.MainActivity"
+    android:id="@+id/rootView"
+    >
+
+    <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:direction="clockwise"
+        app:dotColor="@color/accent"
+        app:dotWidth="20dp"
+        app:drawDot="false"
+        app:enableProgressAnimation="true"
+        app:progressBackgroundColor="@color/primary_dark"
+        app:progressBackgroundStrokeWidth="16dp"
+        app:progressCap="round"
+        app:progressColor="@color/black"
+        app:progressStrokeWidth="16dp"
+        app:startAngle="270"
+        app:textColor="@color/primary_dark"
+        app:textSize="0sp"
+        app:fillBackground="false"
+        app:gradientType="linear"
+        app:gradientEndColor="@color/primary"
+        android:id="@+id/circle_center"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo_wbackground"
+        android:layout_gravity="center"/>
+
+</FrameLayout>

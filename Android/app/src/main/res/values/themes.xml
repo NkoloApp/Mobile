@@ -1,0 +1,111 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Runz" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_dark</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorOnPrimary">@color/accent</item>
+
+        <item name="colorSecondary">@color/primary</item>
+        <item name="colorSecondaryVariant">@color/primary_light</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="colorAccent">@color/primary</item>
+
+        <item name="backgroundColor">@color/white</item>
+
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="android:navigationBarColor">@color/primary_dark</item>
+        // Important to draw behind cutouts
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:ignore="NewApi">shortEdges</item>
+
+
+        //transitions
+        <!-- enable window content transitions -->
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+
+    <!--
+Text styles : four main text styles : h1, h2, h3, P
+-->
+
+
+    <style name="h1" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/bigcaslon</item>
+    </style>
+
+    <style name="h2" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/poppinsregular</item>
+    </style>
+
+    <style name="h3" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">25sp</item>
+        <item name="fontFamily">@font/poppinsbold</item>
+    </style>
+
+    <style name="p1" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/poppinsregular</item>
+    </style>
+
+    <style name="p2" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/poppinsbold</item>
+    </style>
+
+    <style name="p3" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/poppinslight</item>
+    </style>
+
+    <style name="p5" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">25sp</item>
+        <item name="fontFamily">@font/poppinsregular</item>
+    </style>
+
+    <style name="p6" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">40sp</item>
+        <item name="fontFamily">@font/poppinsregular</item>
+    </style>
+
+    <style name="small" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/poppinsthin</item>
+    </style>
+
+
+    <!--
+    Button styles : primary, secondary and disabled
+    -->
+
+    <style name="ButtonAccent" parent="Widget.AppCompat.Button">
+        <item name="textAllCaps">true</item>
+        <item name="android:background">@drawable/background_accent</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/poppinsregular</item>
+    </style>
+
+    <style name="ButtonPrimary" parent="Widget.AppCompat.Button">
+        <item name="textAllCaps">false</item>
+        <item name="android:background">@drawable/background_primary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/poppinsregular</item>
+    </style>
+
+    <style name="ButtonPrimaryDark" parent="Widget.AppCompat.Button">
+        <item name="textAllCaps">false</item>
+        <item name="android:background">@drawable/background_primary_dark</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/poppinsregular</item>
+    </style>
+
+
+</resources>

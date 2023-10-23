@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="65.05383px" height="65.05383px" viewBox="0 0 65.05383 65.05383" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Group-2">
+    <path d="M33.0269 6.00012C47.6644 6.00012 59.5269 17.8626 59.5269 32.5001L59.5269 32.5001C59.5269 47.1377 47.6644 59.0001 33.0269 59.0001L33.0269 59.0001C18.3893 59.0001 6.52686 47.1377 6.52686 32.5001L6.52686 32.5001C6.52686 17.8626 18.3893 6.00012 33.0269 6.00012Z" id="Rectangle-3" fill="#A3CACD" stroke="none" />
+    <g id="vuesaxbrokenadd" fill-opacity="1" transform="matrix(0.70710677 0.70710677 -0.70710677 0.70710677 32.526855 0)">
+      <path d="M65.0538 32.5269L65.0538 32.5269L32.5269 65.0538L0 32.5269L32.5269 0L65.0538 32.5269Z" id="vuesaxbrokenadd" fill="none" stroke="none" />
+      <g id="vuesaxbrokenadd">
+        <g id="add">
+          <path d="M23 34.5L23 11.5" id="Vector" fill="none" fill-rule="evenodd" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M30.6667 23L34.5 23" id="Vector" fill="none" fill-rule="evenodd" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M11.5 23L22.3483 23" id="Vector" fill="none" fill-rule="evenodd" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M23 34.5L23 11.5" id="Vector" fill="none" fill-rule="evenodd" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M46 0L46 46L0 46L0 0L46 0Z" id="Vector" fill="none" fill-rule="evenodd" stroke="none" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

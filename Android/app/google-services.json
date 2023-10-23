@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "116616716605",
+    "project_id": "runz-cf77d",
+    "storage_bucket": "runz-cf77d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116616716605:android:05948d3d7da44fc13ce554",
+        "android_client_info": {
+          "package_name": "xyz.thisisjames.boulevard.android.runz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFiOTz0E9eNoBJnAVjKCcQ3P40sJ0wEgQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

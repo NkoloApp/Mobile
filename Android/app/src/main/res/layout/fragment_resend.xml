@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.start.ui.ResendFragment"
+    android:background="@color/white"
+    android:padding="@dimen/fab_margin">
+
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/luna_sms"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/background_primary"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/h3"
+        android:gravity="center"
+        android:textColor="@color/primary"
+        android:text="Didn't receive a verification code ?" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/p1"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/fab_margin"
+        android:text="Please check your SMS messages before requesting another code." />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ButtonPrimary"
+        android:layout_margin="@dimen/_36dp"
+        android:text="Resend Code"
+        android:id="@+id/resendCode"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingTop="@dimen/_36dp"
+    android:paddingBottom="@dimen/_36dp"
+    tools:context=".view.start.ui.WelcomeFragment">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/luna_welcome"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Nkolo"
+        style="@style/h2"
+        android:textColor="@color/primary"
+        />
+
+    <TextView
+        android:id="@+id/prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Read our Privacy Policy. Tap \''Agre and continue\'' to accept the Terms of Service."
+        style="@style/p1"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/fab_margin"
+        />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ButtonPrimary"
+        android:layout_margin="@dimen/_36dp"
+        android:text="Agree and continue"
+        android:textAllCaps="false"
+        />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
