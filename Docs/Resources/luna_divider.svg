@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="377.48035px" height="24px" viewBox="0 0 377.48035 24" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Group-5">
+    <g id="vuesaxbrokenarrow-right-3" fill-opacity="1" transform="matrix(0 1 -1 0 63 0)">
+      <path d="M24 24L24 24L0 24L0 0L24 0L24 24Z" id="vuesaxbrokenarrow-right-3" fill="none" stroke="none" />
+      <g id="vuesaxbrokenarrow-right">
+        <g id="arrow-right">
+          <path d="M14.4297 5.92993L20.4997 11.9999L14.4297 18.0699" id="Vector" fill="none" stroke="#BDBDBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M11.0098 12L20.3298 12" id="Vector" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M3.5 12L6.97 12" id="Vector" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M24 0L24 24L0 24L0 0L24 0Z" id="Vector" fill="none" fill-rule="evenodd" stroke="none" />
+        </g>
+      </g>
+    </g>
+    <path d="M0 12.5L37.5 12.5" id="Line" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-width="1" stroke-linecap="square" />
+    <path d="M64.5 12.5L376.48 12.5" id="Line-Copy" fill="none" fill-rule="evenodd" stroke="#BDBDBD" stroke-width="1" stroke-linecap="square" />
+  </g>
+</svg>

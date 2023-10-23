@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="41px" height="41px" viewBox="0 0 41 41" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="vuesaxtwotoneunlock" fill-opacity="1">
+    <path d="M497 215L497 215L497 256L456 256L456 215L497 215Z" id="vuesaxtwotoneunlock" fill="none" stroke="none" />
+    <g id="vuesaxtwotoneunlock">
+      <g id="unlock">
+        <path d="M11.9583 37.5833C5.125 37.5833 3.41667 35.875 3.41667 29.0417L3.41667 25.625C3.41667 18.7917 5.125 17.0833 11.9583 17.0833L29.0417 17.0833C35.875 17.0833 37.5833 18.7917 37.5833 25.625L37.5833 29.0417C37.5833 35.875 35.875 37.5833 29.0417 37.5833L11.9583 37.5833Z" id="Vector" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M10.25 17.0833L10.25 13.6667C10.25 8.01208 11.9583 3.41667 20.5 3.41667C28.1875 3.41667 30.75 6.83333 30.75 11.9583" id="Vector" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M20.5 31.6042C18.1413 31.6042 16.2292 29.6921 16.2292 27.3333C16.2292 24.9746 18.1413 23.0625 20.5 23.0625C22.8587 23.0625 24.7708 24.9746 24.7708 27.3333C24.7708 29.6921 22.8587 31.6042 20.5 31.6042Z" id="Vector" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M3.8147e-06 40.9992L3.8147e-06 -3.8147e-06L40.9992 -3.8147e-06L40.9992 40.9992L3.8147e-06 40.9992Z" id="Vector" fill="none" fill-rule="evenodd" stroke="none" />
+      </g>
+    </g>
+  </g>
+</svg>

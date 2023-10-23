@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@color/primary_dark"
+    android:paddingTop="@dimen/_36dp"
+    android:paddingBottom="@dimen/_36dp"
+    android:paddingStart="@dimen/fab_margin"
+    android:paddingEnd="@dimen/fab_margin">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_wbackground"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            style="@style/p2"
+            android:layout_margin="@dimen/fab_margin"
+            android:text="@string/app_name"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/_8dp">
+
+
+        <TextView
+            android:id="@+id/alert_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            style="@style/p1"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:text="Send a verification code to +234 674811223"
+            />
+
+        <ProgressBar
+            android:id="@+id/alert_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ButtonAccent"
+        android:text="Ok"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:id="@+id/alert_button"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

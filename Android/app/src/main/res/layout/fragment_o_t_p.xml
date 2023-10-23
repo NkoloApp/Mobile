@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="@dimen/_36dp"
+    android:background="@color/white"
+    tools:context=".view.start.ui.OTPFragment">
+
+    <TextView
+        android:id="@+id/verif_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/p1"
+        android:drawableStart="@drawable/luna_back"
+        android:layout_marginBottom="@dimen/_36dp"
+        android:textColor="@color/primary"
+        android:text="edit number"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/h2"
+        android:textColor="@color/primary"
+        android:gravity="center"
+        android:text="Verify your number" />
+
+    <TextView
+        android:id="@+id/verif_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/p1"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="We have sent a six digit verification code to +237 673 345 002." />
+
+
+    <LinearLayout android:id="@+id/pin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_36dp">
+
+        <EditText
+            android:id="@+id/verif_otp_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:hint="------"
+            android:layout_margin="4dp"
+            android:inputType="numberPassword"
+            android:textColor="@color/black"
+            android:background="@drawable/underline"
+            style="@style/p1"
+            android:maxLines="1"
+            android:letterSpacing="2"
+            android:singleLine="true" />
+
+
+        <TextView
+            android:id="@+id/verif_prompts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/p3"
+            android:textColor="@color/divider"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:text="Enter 6 digit code" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:visibility="gone"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/p2"
+        android:textColor="@color/primary"
+        android:gravity="center"
+        android:layout_margin="@dimen/fab_margin"
+        android:text="Didn't get code ?"
+        android:id="@+id/verif_resend_button"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

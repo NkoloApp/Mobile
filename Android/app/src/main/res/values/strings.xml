@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Nkolo</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <!-- Strings used for fragments for onboarding  -->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="history">Transaction History</string>
+
+
+    <string name="pending">pending</string>
+    <string name="paid">paid</string>
+    <string name="all">all</string>
+    <string name="warning">All transfers are subject to review, and could be delayed or stopped if we identify an issue</string>
+    <string name="wevesent">"We have sent a six digit verification code to "</string>
+
+
+</resources>

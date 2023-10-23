@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.start.ui.PhoneFragment"
+    android:gravity="center_horizontal"
+    android:paddingTop="@dimen/_36dp"
+    android:paddingBottom="@dimen/_36dp"
+    android:paddingStart="@dimen/fab_margin"
+    android:paddingEnd="@dimen/fab_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/h2"
+        android:gravity="center"
+        android:textColor="@color/primary"
+        android:layout_marginTop="@dimen/_36dp"
+        android:text="Enter your phone number" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/p1"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/fab_margin"
+        android:text="Nkolo will need to verify your account" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_36dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.ak.ui.CountryCodePicker
+            android:id="@+id/ccp_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:contentColor="@color/black"
+            app:fontFamily="@font/montserrat_medium"
+            app:showFlag="true"
+            android:gravity="center"
+            app:defaultNameCode="cm"
+            app:showArrowDown="true"
+            app:showNameCode="false"
+            app:arrowSize="@dimen/_20sdp"
+            app:textSize="@dimen/_12ssp"
+            app:excludedCountries="ad,ae"
+            android:layout_margin="@dimen/_8dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="enter phone number"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:id="@+id/phone_number"
+            android:maxLines="1"
+            />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/space"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/button_next"
+        style="@style/ButtonPrimary"
+        android:gravity="center"
+        android:layout_margin="@dimen/_36dp"
+        android:layout_gravity="center|bottom"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="45.999992px" height="46px" viewBox="0 0 45.999992 46" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M35 0C41.076 0 46 4.92404 46 11L46 35C46 41.076 41.076 46 35 46L11 46C4.92404 46 0 41.076 0 35L0 11C0 4.92404 4.92404 0 11 0L35 0Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="Group">
+    <g id="Rectangle">
+      <use stroke="none" fill="#184248" xlink:href="#path_1" />
+      <g clip-path="url(#clip_1)">
+        <use xlink:href="#path_1" fill="none" stroke="#A3CACD" stroke-width="2" />
+      </g>
+    </g>
+    <g id="vuesaxbrokenimport" fill-opacity="1" transform="translate(11 11)">
+      <path d="M24 0L24 0L24 24L0 24L0 0L24 0Z" id="vuesaxbrokenimport" fill="none" stroke="none" />
+      <g id="vuesaxbrokenimport">
+        <g id="import">
+          <path d="M22.0008 2L13.8008 10.2" id="Vector" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M13 6.16992L13 10.9999L17.83 10.9999" id="Vector" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M2 12.98L2 15C2 20 4 22 9 22L15 22C20 22 22 20 22 15L22 13" id="Vector" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M11 2L9 2C4 2 2 4 2 9" id="Vector" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M24 0L24 24L0 24L0 0L24 0Z" id="Vector" fill="none" fill-rule="evenodd" stroke="none" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
