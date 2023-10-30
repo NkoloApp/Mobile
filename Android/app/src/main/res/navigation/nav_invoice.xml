@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_invoice"
+    app:startDestination="@id/invoiceAmountFragment">
+
+    <fragment
+        android:id="@+id/invoiceAmountFragment"
+        android:name="xyz.thisisjames.boulevard.android.runz.view.invoices.ui.InvoiceAmountFragment"
+        android:label="fragment_invoice_amount"
+        tools:layout="@layout/fragment_invoice_amount" >
+        <action
+            android:id="@+id/action_invoiceAmountFragment_to_invoiceRecipientFragment"
+            app:destination="@id/invoiceRecipientFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/invoiceRecipientFragment"
+        android:name="xyz.thisisjames.boulevard.android.runz.view.invoices.ui.InvoiceRecipientFragment"
+        android:label="fragment_invoice_recipient"
+        tools:layout="@layout/fragment_invoice_recipient" >
+        <action
+            android:id="@+id/action_invoiceRecipientFragment_to_invoiceAmountFragment"
+            app:destination="@id/invoiceAmountFragment" />
+        <action
+            android:id="@+id/action_invoiceRecipientFragment_to_invoiceReferenceFragment"
+            app:destination="@id/invoiceReferenceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/invoiceReferenceFragment"
+        android:name="xyz.thisisjames.boulevard.android.runz.view.invoices.ui.InvoiceReferenceFragment"
+        android:label="fragment_invoice_reference"
+        tools:layout="@layout/fragment_invoice_reference" >
+        <action
+            android:id="@+id/action_invoiceReferenceFragment_to_invoiceRecipientFragment"
+            app:destination="@id/invoiceRecipientFragment" />
+        <action
+            android:id="@+id/action_invoiceReferenceFragment_to_invoiceExpiryFragment"
+            app:destination="@id/invoiceExpiryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/invoiceConfirmFragment"
+        android:name="xyz.thisisjames.boulevard.android.runz.view.invoices.ui.InvoiceConfirmFragment"
+        android:label="fragment_invoice_confirm"
+        tools:layout="@layout/fragment_invoice_confirm" >
+        <action
+            android:id="@+id/action_invoiceConfirmFragment_to_invoiceExpiryFragment"
+            app:destination="@id/invoiceExpiryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/invoiceExpiryFragment"
+        android:name="xyz.thisisjames.boulevard.android.runz.view.invoices.ui.InvoiceExpiryFragment"
+        android:label="fragment_invoice_expiry"
+        tools:layout="@layout/fragment_invoice_expiry" >
+        <action
+            android:id="@+id/action_invoiceExpiryFragment_to_invoiceReferenceFragment"
+            app:destination="@id/invoiceReferenceFragment" />
+        <action
+            android:id="@+id/action_invoiceExpiryFragment_to_invoiceConfirmFragment"
+            app:destination="@id/invoiceConfirmFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.invoices.ui.InvoiceConfirmFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/luna_close"
+            android:background="@android:color/transparent"
+            android:tint="@color/black"
+            android:padding="@dimen/fab_margin"
+            />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ButtonPrimary"
+            android:text="Back"
+            android:layout_marginEnd="@dimen/_36dp"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request"
+        android:layout_marginStart="@dimen/_36dp"
+        style="@style/p2"
+        android:textColor="@color/black"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="enter amount"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        style="@style/p5"
+        android:paddingTop="@dimen/fab_margin"
+        android:paddingBottom="@dimen/fab_margin"
+        android:layout_marginStart="@dimen/_36dp"
+        android:background="@android:color/transparent"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_36dp"
+        android:src="@drawable/luna_divider"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8dp"
+        style="@style/p2"
+        android:textColor="@color/black"
+        android:text="from"
+        android:layout_marginStart="@dimen/_36dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/invoice_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8dp"
+        android:layout_marginStart="@dimen/_36dp"
+        style="@style/p1"
+        android:textColor="@color/black"
+        android:text="674 811 234"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/invoice_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_36dp"
+        android:padding="@dimen/_8dp"
+        style="@style/small"
+        android:textColor="@color/black"
+        android:text="John Minang"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_36dp"
+        android:src="@drawable/luna_divider"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8dp"
+        android:layout_marginStart="@dimen/_36dp"
+        style="@style/p2"
+        android:textColor="@color/black"
+        android:text="Reason for Payment"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/invoice_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter reason for payment here"
+        android:maxLines="2"
+        android:maxEms="120"
+        android:padding="@dimen/_8dp"
+        android:layout_marginStart="@dimen/_36dp"
+        android:layout_marginEnd="@dimen/_36dp"
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/primary_dark"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/_8dp"
+        android:paddingStart="@dimen/fab_margin"
+        android:paddingEnd="@dimen/fab_margin">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/fab_margin"
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8dp"
+                style="@style/p1"
+                android:textColor="@color/divider"
+                android:text="Fees"
+                android:layout_weight="1"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/invoice_fees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8dp"
+                style="@style/p1"
+                android:textColor="@color/white"
+                android:text="150 xaf"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/fab_margin"
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8dp"
+                style="@style/p1"
+                android:textColor="@color/divider"
+                android:text="Total payable"
+                android:layout_weight="1"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/invoice_payable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8dp"
+                style="@style/p1"
+                android:textColor="@color/white"
+                android:text="12,600 xaf"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/fab_margin"
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8dp"
+                style="@style/p1"
+                android:textColor="@color/divider"
+                android:text="Reference"
+                android:layout_weight="1"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/invoice_referene_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8dp"
+                style="@style/p1"
+                android:textColor="@color/white"
+                android:text="X12J30IL"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height=".7dp"
+            android:background="@color/divider"
+            />
+
+        <LinearLayout
+            android:id="@+id/confirm_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/p6"
+                android:textColor="@color/accent"
+                android:text="Confirm"
+                />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:src="@drawable/luna_arrowright"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8dp"
+            style="@style/small"
+            android:textColor="#cccccc"
+            android:text="@string/warning"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

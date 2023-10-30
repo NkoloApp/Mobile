@@ -2,6 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- add READ_CONTACTS permission here  -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
     <application
         android:name=".Runz"
         android:allowBackup="true"
@@ -14,15 +22,21 @@
         android:theme="@style/Base.Theme.Runz"
         tools:targetApi="31">
         <activity
-            android:name=".view.pin.PinActivity"
-            android:exported="true" >
-
+            android:name=".view.invoices.SendInvoiceActivity"
+            android:exported="false" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.PICK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="content" android:path="contacts"></data>
             </intent-filter>
+
         </activity>
+        <activity
+            android:name=".view.business.CreateBusinessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.pin.PinActivity"
+            android:exported="false" />
         <activity
             android:name=".view.start.StartActivity"
             android:exported="false" />
@@ -32,6 +46,11 @@
         <activity
             android:name=".view.splash.MainActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

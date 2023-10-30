@@ -15,10 +15,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import dagger.hilt.android.AndroidEntryPoint;
 import xyz.thisisjames.boulevard.android.runz.R;
 import xyz.thisisjames.boulevard.android.runz.databinding.FragmentPhoneBinding;
 
-
+@AndroidEntryPoint
 public class PhoneFragment extends Fragment {
 
 

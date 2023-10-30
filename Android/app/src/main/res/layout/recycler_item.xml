@@ -12,8 +12,9 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:text="AB"
-        style="@style/p2"
+        style="@style/p1"
         android:gravity="center"
+        android:textColor="@color/white"
         android:background="@drawable/circle_background_light"
         />
 
@@ -28,44 +29,53 @@
             android:id="@+id/reciever"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/p2"
+            style="@style/p1"
             android:textColor="@color/black"
+            android:maxLines="1"
+            android:singleLine="true"
             android:text="Allexia Banadzem"/>
 
-        <TextView
-            android:id="@+id/time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/p3"
-            android:textColor="@color/text_secondary"
-            android:text="2 days ago"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/p3"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:text="13,000 xaf"/>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/small"
+                android:textColor="@color/black"
+                android:text="2 days ago"
+                android:layout_marginEnd="@dimen/_8dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_secondary"
+                android:src="@drawable/luna_paid"
+                />
+
+        </LinearLayout>
+
+
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:gravity="end"
-        android:layout_marginStart="@dimen/_8dp">
 
-        <TextView
-            android:id="@+id/amount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/p3"
-            android:textColor="@color/black"
-            android:text="13,000 xaf"/>
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/text_secondary"
-            android:src="@drawable/luna_paid"
-            />
-
-    </LinearLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

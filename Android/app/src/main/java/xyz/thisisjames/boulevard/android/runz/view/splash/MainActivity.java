@@ -21,12 +21,14 @@ import antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator;
 import xyz.thisisjames.boulevard.android.runz.R;
 import xyz.thisisjames.boulevard.android.runz.databinding.ActivityMainBinding;
 import xyz.thisisjames.boulevard.android.runz.view.home.HomeActivity;
+import xyz.thisisjames.boulevard.android.runz.view.pin.PinActivity;
 import xyz.thisisjames.boulevard.android.runz.view.start.StartActivity;
 import xyz.thisisjames.boulevard.android.runz.viewmodel.AppBase;
 
 
 public class MainActivity extends AppCompatActivity {
 
+    private static int progressCount;
     private AppBase base ;
     private static CircularProgressIndicator circularProgress  ;
 
@@ -40,29 +42,19 @@ public class MainActivity extends AppCompatActivity {
     private Runnable mRunnable = new Runnable() {
         @Override
         public void run() {
-            if (progressCount == 3000 && base.isLoggedIn()){
-                Intent intent = new Intent(getBaseContext(), StartActivity.class);
-                intent.addFlags(FLAG_ACTIVITY_CLEAR_TASK | FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
-            }else if(progressCount == 3000 && base.isVerified()){
-                Intent intent = new Intent(getBaseContext(), HomeActivity.class);
-                intent.addFlags(FLAG_ACTIVITY_CLEAR_TASK | FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
-            }else if(progressCount == 3000 && !base.isVerified()){
-                Intent intent = new Intent(getBaseContext(), StartActivity.class);
-                intent.addFlags(FLAG_ACTIVITY_CLEAR_TASK | FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
-            }else{
+            if (progressCount == 3000) {
+                movePage();
+            } else {
                 setProgress();
                 binding.rootView.setBackgroundColor(getResources().getColor(R.color.primary_dark));
-                mHandler.postDelayed(this,2000);
+                mHandler.postDelayed(this, 2000);
             }
         }
     };
 
     private Handler mHandler  = new Handler() ;
 
-    private static int progressCount = 30 ;
+    private static int progrssCount = 30 ;
 
     private ActivityMainBinding _binding   = null;
     private ActivityMainBinding binding  = _binding ;
@@ -101,5 +93,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    private void movePage(){
+        if (base.isLoggedIn()){
+            //should go to pin
+            Intent intent = new Intent(getBaseContext(), PinActivity.class);
+            intent.addFlags(FLAG_ACTIVITY_CLEAR_TASK | FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+        }else {
+            Intent intent = new Intent(getBaseContext(), StartActivity.class);
+            intent.addFlags(FLAG_ACTIVITY_CLEAR_TASK | FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+        }
+
+    }
 
 }

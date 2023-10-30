@@ -15,9 +15,11 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 
+import dagger.hilt.android.AndroidEntryPoint;
 import xyz.thisisjames.boulevard.android.runz.R;
 import xyz.thisisjames.boulevard.android.runz.databinding.ActivityHomeBinding;
 
+@AndroidEntryPoint
 public class HomeActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
