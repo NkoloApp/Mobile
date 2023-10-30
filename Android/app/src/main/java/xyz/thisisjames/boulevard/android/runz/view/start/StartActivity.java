@@ -6,8 +6,10 @@ import androidx.core.view.WindowCompat;
 import android.os.Bundle;
 import android.view.View;
 
+import dagger.hilt.android.AndroidEntryPoint;
 import xyz.thisisjames.boulevard.android.runz.R;
 
+@AndroidEntryPoint
 public class StartActivity extends AppCompatActivity {
 
     @Override

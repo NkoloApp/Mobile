@@ -10,6 +10,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
 import androidx.navigation.Navigation;
 
 import android.text.Editable;
@@ -22,6 +23,7 @@ import android.widget.TextView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.Firebase;
 import com.google.firebase.FirebaseException;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -31,19 +33,25 @@ import com.google.firebase.auth.PhoneAuthProvider;
 
 import java.util.concurrent.TimeUnit;
 
+import javax.inject.Inject;
+
+import dagger.hilt.android.AndroidEntryPoint;
 import xyz.thisisjames.boulevard.android.runz.R;
 import xyz.thisisjames.boulevard.android.runz.databinding.FragmentOTPBinding;
+import xyz.thisisjames.boulevard.android.runz.model.data.Business;
 import xyz.thisisjames.boulevard.android.runz.view.pin.PinActivity;
+import xyz.thisisjames.boulevard.android.runz.viewmodel.AppBase;
 
-
+@AndroidEntryPoint
 public class OTPFragment extends Fragment {
 
     private FirebaseAuth mAuth;
 
     private String mVerificationId;
 
-    private String VerificationID = "Verification_ID";
-    private String ResendToken = "ResendToken";
+
+    @Inject
+    AppBase base ;
 
     private String Number ;
     private AlertDialog alertDialog;
@@ -63,6 +71,9 @@ public class OTPFragment extends Fragment {
              Number = getArguments().getString("Number");
              sendVerification();
         }
+
+
+
     }
 
     @Override
@@ -163,6 +174,9 @@ public class OTPFragment extends Fragment {
     private void signInWithPhoneAuthCredential(PhoneAuthCredential credential ) {
 
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+
+
+
         firebaseAuth.signInWithCredential(credential).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {

@@ -13,6 +13,8 @@
     <string name="all">all</string>
     <string name="warning">All transfers are subject to review, and could be delayed or stopped if we identify an issue</string>
     <string name="wevesent">"We have sent a six digit verification code to "</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

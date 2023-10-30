@@ -108,4 +108,12 @@ Text styles : four main text styles : h1, h2, h3, P
     </style>
 
 
+    <style name="Edittext" parent="Widget.AppCompat.EditText">
+        <item name="textAllCaps">false</item>
+        <item name="android:background">@drawable/background_bordered</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/poppinsregular</item>
+        <item name="android:textColorHint">@color/divider</item>
+    </style>
+
 </resources>

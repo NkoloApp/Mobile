@@ -54,11 +54,12 @@
 
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/businessName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/h1"
             android:textColor="@color/white"
-            android:text="Hello Martha"
+            android:text="Hello "
             />
 
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -90,11 +91,12 @@
             android:layout_marginBottom="@dimen/_36dp">
 
             <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/businessBalance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="@style/p6"
                 android:textColor="@color/accent"
-                android:text="34,000.00"
+                android:text="0.00"
                 />
 
             <androidx.appcompat.widget.AppCompatTextView
@@ -185,49 +187,83 @@
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/history"
-        style="@style/p2"
-        android:textColor="@color/black"
-        android:paddingTop="@dimen/_36dp"
-        android:paddingStart="@dimen/_36dp"
-        />
-
-
-
-    <androidx.recyclerview.widget.RecyclerView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        android:id="@+id/mlist"
-        android:padding="@dimen/_36dp"
-        tools:listitem="@layout/recycler_item"
-        />
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/transactions">
 
-    <LinearLayout
-        android:id="@+id/viewall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:layout_gravity="center"
-        >
-        <androidx.appcompat.widget.AppCompatTextView
+        <LinearLayout
+            android:id="@+id/viewall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/p1"
-            android:textColor="@color/primary"
-            android:gravity="center"
-            android:padding="@dimen/_36dp"
-            android:text="view all"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/_36dp"
+            android:layout_marginEnd="@dimen/_36dp"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/history"
+                style="@style/p2"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/p1"
+                android:textColor="@color/primary"
+                android:gravity="center"
+                android:text="view all"
+                android:drawableEnd="@drawable/luna_arrowright_grn"
+                />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:id="@+id/mlist"
+            android:paddingStart="@dimen/_36dp"
+            android:paddingEnd="@dimen/_36dp"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/_8dp"
+            tools:listitem="@layout/recycler_item"
             />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/_36dp"
+        android:id="@+id/nohistory">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/luna_arrowright_grn"/>
+            android:src="@drawable/luna_history"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/divider"
+            style="@style/p1"
+            android:gravity="center"
+            android:text="Your invoice history will show here. Start sending invoices now"
+            />
 
     </LinearLayout>
 

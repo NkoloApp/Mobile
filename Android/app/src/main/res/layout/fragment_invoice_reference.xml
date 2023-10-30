@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.invoices.ui.InvoiceReferenceFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/p5"
+        android:text="What is the invoice for ?"
+        android:layout_marginTop="@dimen/_36dp"
+        android:layout_marginStart="@dimen/_36dp"
+        android:layout_marginEnd="@dimen/_36dp"
+        android:textColor="@color/black"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_36dp"
+        android:src="@drawable/divider_right"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_marginEnd="@dimen/_36dp"
+        android:text="Continue"
+        android:id="@+id/button_continue"
+        android:layout_gravity="end"
+        android:drawableEnd="@drawable/luna_arrowright_grn"
+        android:textColor="@color/primary"
+
+        />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/reference"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:hint="enter reason for payment"
+        android:gravity="top"
+        android:maxEms="120"
+        android:paddingTop="@dimen/fab_margin"
+        android:paddingBottom="@dimen/fab_margin"
+        android:layout_margin="@dimen/_36dp"
+        android:background="@android:color/transparent"
+        />
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

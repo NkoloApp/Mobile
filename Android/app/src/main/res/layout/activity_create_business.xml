@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_36dp"
+    android:background="@color/white"
+    tools:context=".view.business.CreateBusinessActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_wbackground"
+            />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ButtonPrimaryDark"
+            android:text="Create"
+            android:id="@+id/buttonCreate"
+            />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary_dark"
+        style="@style/h2"
+        android:text="Tell us about you and your business."
+        android:layout_marginTop="@dimen/_36dp"
+        android:layout_marginBottom="@dimen/_36dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/p2"
+        android:textColor="@color/black"
+        android:text="About Your Business"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/luna_divider"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/p3"
+        android:textColor="@color/divider"
+        android:text="Business Name"
+        android:layout_marginTop="@dimen/fab_margin"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/cba_input_bname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Edittext"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:hint="Awa and Sons"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/p3"
+        android:textColor="@color/divider"
+        android:text="Unique Tax Identifier"
+        android:layout_marginTop="@dimen/fab_margin"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/cba_input_bniu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Edittext"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:hint="M122116826470"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/p2"
+        android:textColor="@color/black"
+        android:text="About You"
+        android:layout_marginTop="@dimen/_36dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/luna_divider"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/p3"
+        android:textColor="@color/divider"
+        android:text="Your name"
+        android:layout_marginTop="@dimen/fab_margin"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/cba_input_oname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Edittext"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:hint="e.g James"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/p3"
+        android:textColor="@color/divider"
+        android:text="Your e-mail"
+        android:layout_marginTop="@dimen/fab_margin"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/cba_input_oemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        style="@style/Edittext"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:hint="example@sample.com"/>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
